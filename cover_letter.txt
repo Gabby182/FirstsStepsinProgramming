@@ -1,0 +1,30 @@
+# This code create a simple Cover Letter model.
+from datetime import datetime
+#Here the variables
+city = input("Enter the city where you reside: ")
+month = input("Enter the month in full, not numeral: ")
+now = datetime.now()
+name = input("Enter your First and Last Name: ")
+age = input("enter your age: ")
+city_state_country = input("Enter the city, state and country you reside: ")
+area = input("Enter the area you want to work on: ")
+soft_skill = input("Insert your main qualities and skills: ")
+things_have_done_recently = input("Enter what you have been doing recently: ")
+goals = input("Enter the achieved goals: ")
+e_mail = input("Enter your email: ")
+telephone_number = input("insert your phone: ")
+
+#Here the Cover Letter
+print ("""%s, %s %04d
+
+   Dear recruiter,
+   My name is %s, I am %s years old. I am from %s. 
+   I am looking for a new position in %s area, and I would be pleasure to start from your company. 
+   I think I am a good fit for this job, because I am %s. In the last few years I have been %s, because my goals were %s.
+   If you were interested in contact me, please answer by the e-mail, or phone number right below.
+   Kind Regards,
+
+   %s 
+   %s
+   %s
+   """ % (city,month,now.year,name,age,city_state_country,area,soft_skill,things_have_done_recently,goals,name,e_mail,telephone_number))
