@@ -1,9 +1,11 @@
 # This code create a simple Cover Letter model.
+
 from datetime import datetime
+
 #Here the variables
+now = datetime.now()
 city = input("Enter the city where you reside: ")
 month = input("Enter the month in full, not numeral: ")
-now = datetime.now()
 name = input("Enter your First and Last Name: ")
 age = input("enter your age: ")
 city_state_country = input("Enter the city, state and country you reside: ")
